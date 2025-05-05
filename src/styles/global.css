@@ -79,6 +79,10 @@ h6 {
   font-size: 1.2em;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 p,
 ul,
 ol {
