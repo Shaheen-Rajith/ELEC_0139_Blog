@@ -212,6 +212,19 @@ td {
   word-break: break-word;
 }
 
+.img-caption {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.img-caption p {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center !important;
+  margin: 0.5em 0 0 0;
+}
+
+
 .container {
   margin: 0 auto;
   max-width: 70em;
@@ -248,6 +261,16 @@ td {
   justify-content: center;
   opacity: 0.5;
   cursor: pointer;
+}
+
+.back-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #548e9b;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .theme-toggle .checked {
