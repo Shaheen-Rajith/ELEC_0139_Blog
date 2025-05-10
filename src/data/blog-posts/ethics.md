@@ -95,7 +95,7 @@ Ultimately, the goal is not just to build intelligent AI systems, we need to als
 
 <footer style="margin-top: 3rem; text-align: center;">
   <a href="/blog" style="padding: 0.6rem 1.2rem; background-color: #548e9b; color: #ffffff; font-size: 1.2 rem; border-radius: 25px; text-decoration: none; font-weight: 500;">
-    ← Back to Blogs
+    ← Back to Blog
   </a>
 </footer>
 
