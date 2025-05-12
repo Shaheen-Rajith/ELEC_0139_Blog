@@ -6,15 +6,15 @@ description: This post looks into the ethical risks of using AI in healthcare, f
 ---
 
 
-The previous blog posts have shown the effect AI/ML can have on the healthcare domain but while these technologies offer unprecedented capabilities in treatment and diagnostics, they also raise serious ethical, legal and societal issues. Problems like bias, lack of accountability \& transparency, data privacy concern cause an overall lack of trust in such AI systems. In the UK, the National Health Service (NHS) has actively tried to integrate AI so as to increase efficiency and clinical outcomes. However, they have encountered multiple issues while doing so which will be described in more detail in this section of the blog as well as the risk if AI systems are left unchecked and what the UK and EU are doing to ensure that such technologies are used fairly and ethically.
+The previous blog posts have shown the effect AI/ML can have on the healthcare domain but while these technologies offer unprecedented capabilities in treatment and diagnostics, they also raise serious ethical, legal and societal issues. Problems like bias, lack of accountability \& transparency, data privacy concern cause an overall lack of trust in such AI systems. In the UK, the National Health Service (NHS) has actively tried to integrate AI so as to increase efficiency and clinical outcomes. However, they have encountered multiple issues while doing so which will be described in more detail in this blog post as well as the risk if AI systems are left unchecked and what the UK and EU are doing to ensure that such technologies are used fairly and ethically.
 
 ## Bias & Fairness of AI in Healthcare
 
-One of the main ethical issues in the usage of AI for healthcare is algorithmic bias. Bias happens when an AI model unintentionally favors some groups over others because of imbalances or flaws in the dataset used to train the ML models. In healthcare, such biases can even lead to clinical harm and erode people’s trust in the system. A recent example of this was pulse oximeters, which were found to overestimate blood oxygen levels in humans with darker skin tones. Although no AI was involved here, it highlights how even commonly used medical devices can have systemic flaws and biases [^pulseoxbias]. Imagine the outcome if similar issues happened in AI systems due to flaws in the data used. 
+One of the main ethical issues in the usage of AI for healthcare is algorithmic bias. Bias happens when an AI model unintentionally favors some groups over others because of imbalances or flaws in the dataset used to train the ML models. In healthcare, such biases can even lead to clinical harm and erode people’s trust in the system. A recent example of this was pulse oximeters, which were found to overestimate blood oxygen levels in humans with darker skin tones. Although no AI was involved here, it shows how even commonly used medical devices can have systemic flaws and biases [^pulseoxbias]. Imagine the outcome if similar issues happened in AI systems due to flaws in the data used. 
 
-Studies have shown that ML models trained to detect melanoma performed much worse on test subjects with darker skin once again, it was attributed to the underrepresentation of such patients in the training dataset. ML models for chest X-rays and cardiovascular risk have also performed more poorly for minority classes like women and ethnic minorities. These cases are not coincidence, they are caused by using training datasets that disproportionately represent white, male, and affluent patients, this reinforces bias and inequalities in clinical outcomes. Also, when AI models are evaluated only on aggregate accuracy, their underperformance on smaller and underserved classes often goes unnoticed.
+Studies have shown that ML models trained to detect melanoma performed much worse on test subjects with darker skin once again, it was attributed to the underrepresentation of such patients in the training dataset. ML models for chest X-rays and cardiovascular risk have also performed more poorly for minority classes like women and ethnic minorities. These cases are not coincidences, they are caused by using training datasets that disproportionately represent white, male, and affluent patients, this reinforces bias and inequalities in clinical outcomes. Also, when AI models are evaluated only on aggregate accuracy, their underperformance on smaller and underserved classes often goes unnoticed.
 
-Bias can also arise from historical data that reflects disparities in procedure. Studies have shown that black patients in the UK have historically been prescribed less pain medication than white patients for the same conditions, due to racially biased assumptions about black people having a higher pain tolerance. If an AI system is trained on prescription records that reflect these disparities, it may think that certain ethnic groups need less pain medication. In practice, this could lead the model to recommend less aggressive pain treatment for black patients. 
+Bias can also arise from historical data that reflects disparities in treatment. Black patients in the UK have historically been prescribed less pain medication than white patients for the same conditions, due to racially biased assumptions about black people having a higher pain tolerance. If an AI system is trained on prescription records that reflect these disparities, it may think that certain ethnic groups need less pain medication. In practice, this could lead the model to recommend less aggressive pain treatment for black patients. 
 
 <img src="/assets/blog/3_1.png" alt="SLUG" style="width: 55%;">
 <div class="img-caption">
@@ -22,7 +22,7 @@ Bias can also arise from historical data that reflects disparities in procedure.
 </div>
 
 
-This creates a positive feedback loop where patients receive less care which is used to train the AI further resulting in future patients receiving even less care because the AI deems from the training data that they don't need as much medication. This is extremely dangerous and is effectively automated systemic discrimination [^ai_bias_healthcare]. Some methods can be used to reduce such bias resulting in more fair and equitable AI models such as:
+This creates a positive feedback loop where patients receive less care which is used to train the AI further resulting in future patients receiving even less care because the AI deems from the training data that they don't need as much medication. This is extremely dangerous and is effectively automated systemic racism [^ai_bias_healthcare]. Some methods can be used to reduce such bias resulting in more fair and equitable AI models such as:
 
 - Diverse data sourcing to reflect real-world demographics
 - Subgroup performance analysis instead of just overall accuracy
@@ -65,8 +65,8 @@ Another major issue is the need of sensitive health data for training Healthcare
 
 As AI gets integrated into the medical field, it raises a lot of questions about accountability. If one of these models misdiagnoses a patient or outright suggests the wrong treatment plan, who is liable for it ? Is it the doctor who used the AI tool or the hospital, or the original developer that created said tool. Currently, the UK does not have any AI specific liability ruling, instead general medical rules can be applied. In this case:
 
-- The healthcare worker can be held responsible for over relying on the AI tool
-- The developer company can be held for creating software deemed defective.
+- The healthcare worker can be held responsible for over relying on the AI tool.
+- The developer company can be held responsible for creating software deemed defective.
 - The hospital can be held responsible for failure in properly implementing the software without oversight.
 
 But the question of Liability gets messy if we’re considering more complex AI systems with autonomy. There are AI systems that make decisions autonomously without any human override or transparency. If such systems misdiagnose, the responsibility will likely fall purely on the developers since the healthcare staff had no role in it. However, if AI systems are only used as a suggestion tool with the hospital staff having the final say in all decisions then the responsibility could be on the person who made the decision entirely [^legal_accountability]. The Medicines and Healthcare products Regulatory Agency (MHRA) maintains that AI tools are only to be used for assistance and that human staff should remain the final decision makers. However, as AI grows more complex, a more detailed framework is needed to determine responsibility in such cases.
@@ -118,9 +118,9 @@ Ultimately, the goal is not just to build intelligent AI systems, we need to als
 
 [^differential_privacy]: C. Dwork and A. Roth. *Differential Privacy in Health Data Sharing*. Annual Review of Statistics and Its Application, 2014. [Link](https://www.annualreviews.org/doi/10.1146/annurev-statistics-010814-020621)
 
-[^tre]: UK Health Data Research Alliance. *Trusted Research Environments: A strategy to build public trust and meet changing health data science needs*. 2020. [Link](https://ukhealthdata.org/projects/aligning-approach-to-trusted-research-environments/)
+[^tre]: UK Health Data Research Alliance. *Trusted Research Environments: A strategy to build public trust and meet changing health data science needs*. 2020. [Link](https://ukhealthdata.org/wp-content/uploads/2020/07/200723-Alliance-Board_Paper-E_TRE-Green-Paper.pdf)
 
-[^legal_accountability]: J. Morley and L. Floridi. *Artificial intelligence in health care: accountability and safety*. Bulletin of the World Health Organization, 2020. [Link](https://www.who.int/bulletin/volumes/98/4/19-237543/en/)
+[^legal_accountability]: Habli, Ibrahim, Lawton, Tom, and Porter, Zoe. *Artificial intelligence in health care: Accountability and safety.* *Bulletin of the World Health Organization*, 2020. [Link](https://doi.org/10.2471/BLT.19.237487)
 
 [^eu_ai_act]: European Parliament. *EU AI Act: first regulation on artificial intelligence*. 2023. [Link](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence)
 
